@@ -1,186 +1,167 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>My Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Portfolio cá nhân</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+        body {
+            color: #fff;
+        }
 
-    body {
-      line-height: 1.6;
-      color: #333;
-    }
+        /* HERO */
+        .hero {
+            height: 100vh;
+            background: url("img/forest.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
 
-    header {
-      background: #111;
-      color: white;
-      padding: 20px 50px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+        .hero h1 {
+            font-size: 50px;
+        }
 
-    header h1 {
-      font-size: 24px;
-    }
+        .hero p {
+            margin-top: 10px;
+            font-size: 20px;
+        }
 
-    nav a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-    }
+        /* NAV */
+        nav {
+            position: fixed;
+            width: 100%;
+            background: rgba(0,0,0,0.6);
+            padding: 10px;
+            text-align: center;
+        }
 
-    .hero {
-      height: 90vh;
-      background:url("../img/forest_trees_perspectibe_bright_green_beautiful_vanishing_point_crown-1442413.jpg!d");
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-    }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-    .hero h2 {
-      font-size: 48px;
-    }
+        /* SECTION */
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
 
-    .hero p {
-      margin-top: 10px;
-      font-size: 20px;
-    }
+        .about {
+            background: #2e7d32;
+        }
 
-    section {
-      padding: 60px 80px;
-    }
+        .hobby {
+            background: #388e3c;
+        }
 
-    .about {
-      display: flex;
-      gap: 40px;
-      align-items: center;
-    }
+        .activity {
+            background: #43a047;
+        }
 
-    .about img {
-      width: 250px;
-      border-radius: 10px;
-    }
+        .contact {
+            background: #1b5e20;
+        }
 
-    .skills span {
-      display: inline-block;
-      background: #111;
-      color: white;
-      padding: 8px 15px;
-      margin: 5px;
-      border-radius: 20px;
-    }
+        h2 {
+            margin-bottom: 20px;
+        }
 
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
+        .box {
+            max-width: 800px;
+            margin: auto;
+        }
 
-    .card {
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      overflow: hidden;
-    }
+        /* IMAGE */
+        .about img {
+            width: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
 
-    .card img {
-      width: 100%;
-    }
-
-    .card h3 {
-      padding: 10px;
-    }
-
-    footer {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    @media(max-width: 768px) {
-      .about {
-        flex-direction: column;
-        text-align: center;
-      }
-    }
-  </style>
+        /* FOOTER */
+        footer {
+            background: black;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
 </head>
-
 <body>
 
-<header>
-  <h1>Ánh Tuyết</h1>
-  <nav>
-    <a href="#about">Giới thiệu</a>
-    <a href="#hobbies">Sở thích</a>
-    <a href="#experience">Kinh nghiệm</a>
-  </nav>
-</header>
+    <!-- MENU -->
+    <nav>
+        <a href="#about">Giới thiệu</a>
+        <a href="#hobby">Sở thích</a>
+        <a href="#activity">Hoạt động</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
 
-<section class="hero">
-  <div>
-    <h2>Xin chào, tôi là Tuyết</h2>
-    <p>Sinh viên năm 2 chuyên ngành Quản trị kinh doanh trường Đại học Ngoại thương</p>
-  </div>
-</section>
-
-<section id="about" class="about">
-  <img src="../img/Tuyết.jpg">
-  <div>
-    <h2>Giới thiệu</h2>
-    <p>
-      Tôi đến từ Thái Bình, vùng đất địa linh nhân kiệt nơi có đặc sản bánh cáy và canh cá nổi tiếng.
-    </p>
-  </div>
-</section>
-
-<section id="hobbies">
-  <h2>Sở thích</h2>
-  <div class="hobbies">
-    <span>HTML</span>
-    <span>CSS</span>
-    <span>SQL</span>
-    <span>English</span>
-    <span>Communication</span>
-  </div>
-</section>
-
-<section id="projects">
-  <h2>Kinh nghiệm</h2>
-  <div class="projects">
-    
-    <div class="card">
-      <img src="https://via.placeholder.com/400x200">
-      <h3>Website cá nhân</h3>
+    <!-- HERO -->
+    <div class="hero">
+        <div>
+            <h1>Xin chào, mình là Tuyết 🌿</h1>
+            <p>Yêu thiên nhiên • Thích khám phá • Học hỏi mỗi ngày</p>
+        </div>
     </div>
 
-    <div class="card">
-      <img src="https://via.placeholder.com/400x200">
-      <h3>Dashboard Excel</h3>
-    </div>
+    <!-- GIỚI THIỆU -->
+    <section id="about" class="about">
+        <div class="box">
+            <img src="img/tuyet.jpg" alt="Tuyet">
+            <h2>Giới thiệu</h2>
+            <p>
+                Mình là sinh viên đang học và phát triển kỹ năng về công nghệ và quản trị.
+                Mình yêu thích thiên nhiên, cây cối và luôn muốn tạo ra những giá trị tích cực.
+            </p>
+        </div>
+    </section>
 
-    <div class="card">
-      <img src="https://via.placeholder.com/400x200">
-      <h3>Phân tích dữ liệu</h3>
-    </div>
+    <!-- SỞ THÍCH -->
+    <section id="hobby" class="hobby">
+        <div class="box">
+            <h2>Sở thích</h2>
+            <p>🌱 Chơi thể thao (cầu lông)</p>
+            <p>🎬 Xem phim</p>
+            <p>📚 Học những điều mới</p>
+            <p>🌿 Đi dạo và hòa mình vào thiên nhiên</p>
+        </div>
+    </section>
 
-  </div>
-</section>
+    <!-- HOẠT ĐỘNG -->
+    <section id="activity" class="activity">
+        <div class="box">
+            <h2>Hoạt động ngoại khoá</h2>
+            <p>✔ Tham gia các hoạt động nhóm tại trường</p>
+            <p>✔ Hỗ trợ giảng dạy tiếng Anh cho học sinh</p>
+            <p>✔ Tham gia các dự án học tập và nghiên cứu</p>
+        </div>
+    </section>
 
-<footer>
-  <p>© 2026 Tuyết - Portfolio</p>
-</footer>
+    <!-- LIÊN HỆ -->
+    <section id="contact" class="contact">
+        <div class="box">
+            <h2>Liên hệ</h2>
+            <p>Email: tuyet@example.com</p>
+            <p>Facebook: facebook.com/tuyet</p>
+            <p>SĐT: 0123 456 789</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Tuyết - Portfolio cá nhân</p>
+    </footer>
 
 </body>
 </html>
