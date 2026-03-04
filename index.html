@@ -85,10 +85,15 @@
 
         /* IMAGE */
         .about img {
-            width: 150px;
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
+    width: 220px;              /* phóng to ảnh */
+    height: 220px;             /* giữ hình vuông để tròn đẹp */
+    border-radius: 50%;        /* tạo hình tròn */
+    object-fit: cover;         /* không méo ảnh */
+    margin-bottom: 20px;
+
+    border: 4px solid white;   /* viền đẹp hơn */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4); /* đổ bóng */
+}
 
         /* FOOTER */
         footer {
