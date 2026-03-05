@@ -62,18 +62,33 @@
             background: #2e7d32;
         }
 
-        .hobby icon {
-    width: 120px;
-    height: 80px;
-    border-radius: 8px;
-    object-fit: cover;
-    margin-right: 15px;
-    vertical-align: middle;
+        .hobby{
+    text-align:center;
 }
-        .hobby p{
-    display: flex;
-    align-items: center;
-    margin: 15px 0;
+
+.hobby-item{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:20px;
+    margin:20px 0;
+}
+
+.hobby-item img{
+    width:140px;
+    height:90px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+.hobby-item img:hover{
+    transform:scale(1.05);
+}
+
+.hobby-item p{
+    font-size:20px;
 }
 
 .hobby {
@@ -147,15 +162,24 @@
     </section>
 
     <!-- SỞ THÍCH -->
-    <section id="hobby" class="hobby">
-    <div class="box">
-        <h2>Sở thích</h2>
+    <section class="hobby">
+<h2>Sở thích</h2>
 
-        <p><img src="zipnerf/img/tải xuống (1).jpg" class="icon"> Chơi cầu lông</p>
-        <p><img src="zipnerf/img/tải xuống (2).jpg" class="icon"> Xem phim</p>
-        <p><img src="zipnerf/img/tải xuống (3).jpg" class="icon"> Đi dạo, ngắm cây cối và hòa mình vào thiên nhiên</p>
+<div class="hobby-item">
+<img src="zipnerf/img/tải xuống (1).jpg">
+<p>Chơi cầu lông</p>
+</div>
 
-    </div>
+<div class="hobby-item">
+<img src="zipnerf/img/tải xuống (2).jpg">
+<p>Xem phim</p>
+</div>
+
+<div class="hobby-item">
+<img src="zipnerf/img/tải xuống (3).jpg">
+<p>Đi dạo, ngắm cây cối và hòa mình vào thiên nhiên</p>
+</div>
+
 </section>
 
     <!-- HOẠT ĐỘNG -->
