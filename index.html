@@ -64,6 +64,7 @@
 
         .about {
             background: #2e7d32;
+            font-size: 22px;
         }
 .hobby-container{
     width: 700px;     
@@ -97,20 +98,34 @@
 }
 
         .activity{
-    background: #43a047;   
-    padding: 80px 20px;
-    text-align: center;
+    background:#43a047;
+    padding:80px 20px;
+    text-align:center;
 }
 
 .activity-box{
-    width: 700px;
-    margin: auto;
-    text-align: left;
+    width:700px;
+    margin:auto;
 }
 
-.activity-box p{
-    font-size: 22px;
-    margin: 18px 0;
+.activity-item{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    margin:30px 0;
+}
+
+.activity-item img{
+    width:180px;
+    height:120px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.4);
+}
+
+.activity-item p{
+    font-size:22px;
+    text-align:left;
 }
 
         .contact {
@@ -200,19 +215,28 @@
 
     <!-- HOẠT ĐỘNG -->
 <section id="activity" class="activity">
-    <div class="box">
-        <h2>Hoạt động ngoại khoá</h2>
 
-        <p>🌟 Phó ban Nhân sự CLB Sinh viên Nghiên cứu Khoa học 
-        Trường Đại học Ngoại thương – YRC FTU</p>
+    <h2>Hoạt động ngoại khoá</h2>
 
-        <p>🎯 Tham gia tổ chức và chạy các sự kiện của câu lạc bộ</p>
+    <div class="activity-box">
 
-        <p>🏫 Tham gia các hoạt động và chương trình của nhà trường</p>
+        <div class="activity-item">
+            <img src="zipnerf/img/clb.jpg">
+            <p>Phó ban Nhân sự CLB Sinh viên Nghiên cứu Khoa học Trường Đại học Ngoại thương – YRC FTU</p>
+        </div>
 
-        <p>💻 Tìm hiểu và thực hành lập trình, xây dựng website cá nhân</p>
+        <div class="activity-item">
+            <img src="zipnerf/img/event.jpg">
+            <p>Tham gia tổ chức và chạy các sự kiện của câu lạc bộ</p>
+        </div>
+
+        <div class="activity-item">
+            <img src="zipnerf/img/school.jpg">
+            <p>Tham gia các hoạt động và chương trình của nhà trường</p>
+        </div>
 
     </div>
+
 </section>
 
     <!-- LIÊN HỆ -->
