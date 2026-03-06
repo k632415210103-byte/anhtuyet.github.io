@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio cá nhân</title>
+    <!-- Thư viện icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
         * {
             margin: 0;
@@ -128,9 +131,27 @@
     text-align:left;
 }
 
-        .contact {
-            background: #1b5e20;
-        }
+        .contact-item{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    margin:20px 0;
+    font-size:20px;
+}
+
+.contact-item i{
+    font-size:24px;
+}
+
+.contact-item a{
+    color:white;
+    text-decoration:none;
+}
+
+.contact-item a:hover{
+    text-decoration:underline;
+}
 
         h2 {
             margin-bottom: 20px;
@@ -221,17 +242,17 @@
     <div class="activity-box">
 
         <div class="activity-item">
-            <img src="zipnerf/img/clb.jpg">
+            <img src="zipnerf/img/YRC.png">
             <p>Phó ban Nhân sự CLB Sinh viên Nghiên cứu Khoa học Trường Đại học Ngoại thương – YRC FTU</p>
         </div>
 
         <div class="activity-item">
-            <img src="zipnerf/img/event.jpg">
+            <img src="zipnerf/img/toạ đàm.jpg">
             <p>Tham gia tổ chức và chạy các sự kiện của câu lạc bộ</p>
         </div>
 
         <div class="activity-item">
-            <img src="zipnerf/img/school.jpg">
+            <img src="zipnerf/img/ftu.jpg">
             <p>Tham gia các hoạt động và chương trình của nhà trường</p>
         </div>
 
@@ -240,14 +261,35 @@
 </section>
 
     <!-- LIÊN HỆ -->
-    <section id="contact" class="contact">
-        <div class="box">
-            <h2>Liên hệ</h2>
-            <p>Email: tuyet@example.com</p>
-            <p>Facebook: facebook.com/tuyet</p>
-            <p>SĐT: 0123 456 789</p>
+    <!-- LIÊN HỆ -->
+<section id="contact" class="contact">
+    <div class="box">
+
+        <h2>Liên hệ</h2>
+
+        <div class="contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:k63.2415210103@ftu.edu.vn">
+                k63.2415210103@ftu.edu.vn
+            </a>
         </div>
-    </section>
+
+        <div class="contact-item">
+            <i class="fa-brands fa-facebook"></i>
+            <a href="https://web.facebook.com/tun.chan.520" target="_blank">
+                web.facebook.com/tun.chan.520
+            </a>
+        </div>
+
+        <div class="contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:0356562628">
+                0356562628
+            </a>
+        </div>
+
+    </div>
+</section>
 
     <footer>
         <p>© 2026 Tuyết - Portfolio cá nhân</p>
